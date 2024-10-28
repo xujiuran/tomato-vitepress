@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-const base = "/blog-demo/";
+const base = "/tomato-vitepress/";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base,
