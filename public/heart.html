@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>七夕表白</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+		    margin: 0;
+		    padding: 0;
+		    height: 100vh;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+		    animation: backgroundAnimation 10s ease infinite;
+		}
+		
+		.container {
+		    text-align: center;
+		}
+		
+		.heart {
+		    width: 100px;
+		    height: 100px;
+		    position: relative;
+		    background-color: red;
+		    transform: rotate(-45deg);
+		    animation: pulse 1s infinite;
+		}
+		
+		.heart::before,
+		.heart::after {
+		    content: "";
+		    width: 100px;
+		    height: 100px;
+		    background-color: red;
+		    border-radius: 50%;
+		    position: absolute;
+		}
+		
+		.heart::before {
+		    top: -50px;
+		    left: 0;
+		}
+		
+		.heart::after {
+		    left: 50px;
+		    top: 0;
+		}
+		
+		.message {
+		    font-size: 40px;
+		    color: white;
+		    margin-top: 20px;
+		    opacity: 0;
+		    animation: fadeIn 2s forwards;
+		}
+		
+		@keyframes pulse {
+		    0%, 100% {
+		        transform: scale(1);
+		    }
+		    50% {
+		        transform: scale(1.1);
+		    }
+		}
+		
+		@keyframes fadeIn {
+		    to {
+		        opacity: 1;
+		    }
+		}
+		
+		@keyframes backgroundAnimation {
+		    0% {
+		        background: #ff7e5f;
+		    }
+		    50% {
+		        background: #feb47b;
+		    }
+		    100% {
+		        background: #ff7e5f;
+		    }
+		}
+
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart"></div>
+        <h1 class="message">I LOVE YOU！</h1>
+    </div>
+    <script>
+		// 这里可以添加一些交互效果，例如点击心形时动态改变表白信息或背景
+		const heart = document.querySelector('.heart');
+		
+		heart.addEventListener('click', () => {
+		    alert('你是我心中的唯一');
+		});
+
+	</script>
+</body>
+</html>
+

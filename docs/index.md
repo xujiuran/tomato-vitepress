@@ -3,9 +3,12 @@
 layout: home
 
 hero:
-  name: "TomatoXcj - 探索之旅"
+  name: "XdLoveLn"
   text: ""
   tagline: 一个前端开发的探索之路
+  image: 
+    src: https://raw.githubusercontent.com/xujiuran/upload-img/main/img/logo.svg
+    alt: logo
   actions:
     - theme: brand
       text: Markdown 示例
